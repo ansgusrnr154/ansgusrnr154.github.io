@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hw04</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Sunflower:wght@500&display=swap" rel="stylesheet">
     <style>
-    
+        @import url(../css/menubar.css);
+           
         body {background-color: lightyellow}
 
         #title {
@@ -29,14 +31,30 @@
             border-radius: 30%;
 
         }
-           
-
+        .list {
+           margin-left: 30px;
         }
-
-
-    </style>
+        p {
+            text-align: center;
+        }
+        </style>
 </head>
 <body>
+    <!-- 메뉴시작 -->
+    <div id="wrapper">
+        <div id="button">
+        <a href="../hw05/index.html">MAIN</a>
+     <p>1YA문현국</p>
+    </div>
+    <div id="menubar">
+        <ul>
+            <li><a href="../hw02/index.html">HW02</a></li>
+            <li><a href="../hw03/hw03.html">HW03</a></li>
+            <li><a href="../hw04/hw04.html">HW04</a></li>
+            <li><a href="../hw05/hw5.html">HW05</a></li>
+        </ul>
+    </div>
+    <!-- 메뉴끝 -->
     <div>
         <h1 id="title">간단한 캠핑장 요리 야채 비빔국수 만들기</h1>
 
@@ -53,8 +71,10 @@
     <div class="img_cook2">
         <img src="./img/cook2.jpg" alt="비빔국수">
     </div>
+
     <p>
         <a href="https://haemukja.com/recipes?utf8=%E2%9C%93&sort=rlv&name=%EC%B4%88%EA%B0%84%EB%8B%A8%EC%9A%94%EB%A6%AC"target="_blank">출처</a>
     </p>
+</div>
 </body>
 </html>

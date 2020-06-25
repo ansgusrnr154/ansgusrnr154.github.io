@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw09 제원 page</title>
+    <style>
+        @import url(./css/menubar.css);
+
+        section{
+	        background-size: cover;
+            position: relative;
+            width: 100%;
+            top: 160px;
+            padding: 0;
+            height: 600px;
+            margin: 0 auto;
+            }
+        section h1{
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+    
+        }    
+        section img{
+        width: 1500px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 4px 4px 4px 4px gray;
+         }
+        article{
+            text-align: center;
+            position: relative;
+            top: 200px;
+            padding: 0;
+        }
+
+        table{
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 150px;
+            height: 10px;   
+            border: 1px solid black; 
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #e3f2fd;
+        }
+        .title,.engin{
+            background-color: gray;
+            color: white;
+        }
+       footer{
+           background-color: gray;
+           position: relative;
+           top: 100px;
+           padding: 20px;
+       }
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 메뉴바 시작 -->
+    <header>
+        <a href="./index.html"><img id= "logo" src="./img/logo.jpg" alt=""></a>
+
+<ul id="menubar">
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./car gallery.html">갤러리</a></li>
+    <li><a href="./car feature.html">제원</a></li>
+</ul>
+</header>
+<!-- 메뉴바 끝 -->
+        <section class="chart_img">
+            <h1>제원</h1>
+            <img src="./img/chart.jpg" alt="chart">
+        </section>
+        <article>
+            <table>
+                  <tr>
+                      <th colspan=2 class="title">제원표</th>
+                  </tr>
+                  <tr>
+                      <th>Car</th>
+                      <th>카니발</th>
+                  </tr>
+                  <tr>
+                        <td>전장(mm)</td>
+                        <td>5,115</td>
+                  </tr>
+                  <tr>
+                      <td>전폭(mm)</td>
+                      <td>1,985</td>
+                  </tr>
+                  <tr>
+                      <td>전고(mm)</td>
+                      <td>1,740(1,755)</td>
+                  </tr>
+                  <tr>
+                      <td>축거(mm)</td>
+                      <td>3,060</td>
+                  </tr> 
+                  <tr>
+                      <td>윤거 전(mm)</td>
+                      <td>1,745/1,740/1,742</td>
+                  </tr>
+                  <tr>
+                      <td>윤거 후(mm)</td>
+                      <td>1,752/1,747/1,742</td>
+                  </tr>  
+                  
+                </table>
+                
+                
+               
+                
+                <table id="Engin">
+                    <tr>
+                        <th colspan="3" class="engin">엔진성능</th>
+                    </tr>
+                    <tr>
+                        <th>구분</th>
+                        <th>R 2.2E-VGT 디젤</th>
+                        <th>람다 || 개선 3.3GDI</th>
+                    </tr>
+                    <tr>
+                        <td>배기량(cc)</td>
+                        <td>2,199</td>
+                        <td>3,342</td>
+                    </tr>
+                    <tr>
+                        <td>최고 출력(ps/rpm)</td>
+                        <td>202 / 3,800</td>
+                        <td>280 / 6,000</td>
+                    </tr>
+                    <tr>
+                        <td>최대 토크(kgf.m/rpm)</td>
+                        <td>45 / 1,750~2,750</td>
+                        <td>34.3 / 5,200</td>
+                    </tr>
+                    <tr>
+                        <td>최대타이어</td>
+                        <td>235 / 55R19</td>
+                        <td>235 / 55R19</td>
+                    </tr>
+                    <tr>
+                        <td>브레이크(전/후)</td>
+                        <td>벤틸레이티드 디스크 / 디스크</td>
+                        <td>벤틸레이티드 디스크 / 디스크</td>
+                    </tr>
+                    <tr>
+                        <td>서스펜션(전/후)</td>
+                        <td>맥퍼슨 스트렛 / 인 필타입 멀티링크</td>
+                        <td>맥퍼슨 스트렛 / 인 필타입 멀티링크</td>
+                    </tr>
+                </table>
+        </article>
+        <footer>
+            <p>copyright & Copy <a href="./hw07-index.html" class="site">ansgusrnr154</a>All rights reserved.</p>
+               <span>EMAIL : ansgusrnr154@naver.com </span>
+               <span>자료출처https://www.kia.com/kr/vehicles/all-new-carnival/features.html </span>
+        </footer>
+
+</body>
+</html>

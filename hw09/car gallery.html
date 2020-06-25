@@ -1,0 +1,190 @@
+<!-- hw09 갤러리페이지 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw09 Gallery page</title>
+
+    <style>
+        @import url(./css/menubar.css);
+        body{
+            color: black;
+        }
+        nav{
+            text-align: center;
+            width: 100%;
+	        height: 80px;
+	        margin: 0;
+	        padding: 0;
+	        background: lightgray;
+            }
+        nav  a:hover{
+            text-shadow: 2px 2px 2px black;
+            text-decoration: underline;
+            }
+        nav a:link, nav a:visited {
+	        font-size: 30px;
+	        color: black;
+	        text-decoration: none;
+	        text-align: center;
+        }
+        .nav-img {
+	    display: inline-block;
+	    width: 15%;
+	    height: 30px;
+	    line-height: 100px;
+	    margin-right: 30px;
+        }
+        section{
+        top: 163px;
+	    position: relative;
+	    width: 100%;
+	    margin: 0 auto;
+	    padding: 0;
+	    height: 800px;
+        }
+        section h2{
+            font-size: 30px;
+            color:white;
+            text-shadow: 3px 3px 3px black;
+        }
+        .page1 {
+	     background:url('./img/main01.jpg') no-repeat center;			
+	     background-size: cover;
+        }
+        .page2 {
+	    background:url('./img/inside.jpg') no-repeat center;			
+	    background-size: cover;
+        }
+        .page3 {
+	    background:url('./img/headlamp.jpg') no-repeat center;			
+	    background-size: cover;
+        }
+        .page4 {
+	    background:url('./img/foglamp.jpg') no-repeat center;	
+	    background-size: cover;		
+        }
+        .page5 {
+	    background:url('./img/rear.jpg') no-repeat center;	
+	    background-size: cover;		
+        }	
+        #main_img{
+            list-style: none;
+        }
+    
+    ul li{
+        margin: 0 auto;
+        padding: 0;
+    }
+    #main_img  li {
+        text-align: center;
+        margin-left: 5px;
+        width: 100px;
+        background-color: #fff;
+        display: inline-table;
+        
+    }
+    #main_img li a img {
+        display:block;
+		float: left;
+		width:300px;
+		height:300px;
+		-webkit-transition-property:width,height;
+		-webkit-transition-duration:0.5s;
+		-moz-transition-property:width,height;
+		-moz-transition-duration:0.5s;
+		-ms-transition-property:width,height;
+		-ms-transition-duration:0.5s;
+		-o-transition-property:width,height;
+		-o-transition-duration:0.5s;
+		transition-property:width,height;
+		transition-duration:0.5s;				
+		position:relative;
+        z-index:2;
+    }
+    #main_img li:hover a img {
+                width:1000px;
+				height:750px;
+				position: relative;
+				z-index: 3;
+				-webkit-transition-property:width,height;
+				-webkit-transition-duration:0.5s;
+				-moz-transition-property:width,height;
+				-moz-transition-duration:0.5s;
+				-ms-transition-property:width,height;
+				-ms-transition-duration:0.5s;
+				-o-transition-property:width,height;
+				-o-transition-duration:0.5s;
+				transition-property:width,height;
+				transition-duration:0.5s;
+               }
+               footer{
+                   background-color: gray;
+                   position: relative;
+                   padding: 20px;
+                   top: 100px;}
+        </style>
+    <script>
+         $(function(){
+             $('nav-img').click(function(e){
+                 $.scrollTo(this.hash || 0, 1500);
+                 e.preventDefault();
+             });
+         });
+    </script>
+</head>
+<body>
+    <!-- 메뉴바 시작 -->
+    <div id="wrapper">
+    <header>
+        <a href="./index.html"><img id= "logo" src="./img/logo.jpg" alt=""></a>
+        <ul id="menubar">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./car gallery.html">갤러리</a></li>
+        <li><a href="./car feature.html">제원</a></li>
+        </ul>
+        <nav>
+        <a href="#mainimg" class="nav-img">Main Image</a>
+        <a href="#inside" class="nav-img">Inside</a>
+        <a href="#head" class="nav-img">Head lamp</a>
+        <a href="#fog" class="nav-img">fog lamp</a>
+        <a href="#bump" class="nav-img">Rear bumper</a>
+        </nav>
+        
+</div>
+</header>
+<!-- 메뉴바 끝 -->
+
+<div id="container">
+    <section id="mainimg"">
+        <h2>Main Img</h2>
+        <ul id="main_img">
+            <li href="#"><a href=""><img src="./img/main01.jpg" alt="main01" /></a></li> 
+            <li href="#"><a href=""><img src="./img/main02.jpg" alt="main02" /></a></li>  
+            <li href="#"><a href=""><img src="./img/main03.jpg" alt="main03" /></a></li> 
+        </ul>
+        
+    </section>
+    <section id="inside" class="page2">
+        <h2>내부 운전좌석</h2>
+    </section>
+    <section id="head" class="page3">
+        <h2>LED 헤드램프/LED DRL</h2>
+    </section>
+    <section id="fog" class="page4">
+        <h2>LED 포그램프</h2>
+    </section>
+    <section id="bump" class="page5">
+        <h2>리어범퍼</h2>
+    </section>
+</div> 
+<footer>
+    <p>copyright & Copy <a href="./hw07-index.html" class="site">ansgusrnr154</a>All rights reserved.</p>
+    <span>EMAIL : ansgusrnr154@naver.com </span>
+    <span>자료출처https://www.kia.com/kr/vehicles/all-new-carnival/features.html </span>
+</footer>
+
+
+</body>
+</html>

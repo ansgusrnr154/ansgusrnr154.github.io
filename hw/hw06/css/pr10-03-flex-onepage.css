@@ -17,9 +17,10 @@ nav {
   width:100vw;
   height:auto;
   background:#34495e;
-  font-size:1.2em;
+  font-size: 15px;
   font-weight:bold;
   position:relative;
+  padding: 20px;
 }
 nav ul {
   display: none;

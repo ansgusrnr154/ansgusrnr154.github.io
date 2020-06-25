@@ -1,0 +1,141 @@
+<!-- hw07.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw07.html</title>
+    <style>
+         @import url(./css/menubar.css);
+         body {
+             background-color: lightyellow;
+         }
+         #wrapper{
+             margin: 0 auto;
+         }
+         #content{
+             text-align:center;
+         }
+         .conta{
+             text-align: left;
+             margin-top: 20px;
+             margin-bottom: 30px;
+             color: blue;
+         }
+         .conta h1{
+             color: green;
+             margin-bottom: 10px;
+         }
+         .conta strong{color: coral;}
+         .conta em{color: coral; font-weight: bold;}
+         #contb{color: white; 
+                background-color: lightgray;
+                font-size: 3em;
+                margin-bottom: 25px;}
+        table{
+            border: black;
+            font-size: 20px;
+            text-align: center;
+        }
+        td{padding: 20px;}
+        #copyright{
+            color: blue;
+            font-size: 20px;
+        }
+        #tbl_submit{
+            margin-left:770px;
+        }
+        button{
+            background-color: blueviolet;
+            color:white;
+            font-size: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+        <!-- 메뉴시작 -->
+        <div id="wrapper">
+            <div id="button">
+            <a href="./hw07-index.html">MAIN</a>
+         <p>1YA문현국</p>
+        </div>
+        <div id="menubar">
+            <ul>
+                <<li><a href="../hw02/index.html">HW02</a></li>
+                <li><a href="../hw03/hw03.html">HW03</a></li>
+                <li><a href="../hw04/hw04.html">HW04</a></li>
+                <li><a href="../hw05/hw5.html">HW05</a></li>
+                <li><a href="../hw06/hw06.html">HW06</a></li>
+                <li><a href="../hw08/hw08.html">HW08</a></li>
+                <li><a href="../hw05/hw5.html">Home</a></li>
+                <li><a href="#">Lecture</a></li>
+                <li><a href="../hw09/portfolio.html">기말최종과제</a></li>
+                <li><a href="./hw07-contact.html">Contact</a></li>
+                <li><a href="./hw07.html">Profile</a></li>
+            </ul>
+        </div>
+        <!-- 메뉴끝 -->
+        <!--content-->
+       <div id="content">
+           <div class="conta">
+               <h1>인터넷기초실습 교과목</h1>
+               <p>웹 프로그래밍 기초가 되는 <strong>HTML5</strong> 와 <strong>CSS3</strong>를 중심으로 학습합니다.</p>
+               <p>HTML5와CSS3를 사용한 <em>웹 사이트 제작</em>을 작성합니다.</ed></p> 
+                 </div>
+                 <!-- 설명 -->
+                 <!-- 내용 -->
+                 <div class="Contact">
+                     <h2 id="contb">메시지 보내기</h2>
+                     <div id="tbl_contact">
+                        <form id="form contact">
+                            <table border="1">
+                                <tr>
+                                    <td>이름</td>
+                                    <td><input type="text" name="writer" size="55"></td>
+                                    <td>연락처</td>
+                                    <td><input type="text" name="pw"></td>
+                                    </tr>
+                                    <tr>
+                                    <td>이메일</td>
+                                    <td><input type="text" name="email" size="39">@
+                                    <select>
+                                        <option>선택하기</option>
+                                        <option>daum.net</option>
+                                        <option>gmail.com</option>
+                                        <option>naver.com</option>
+                                        <option>직접입력</option>
+                                    </select></td>
+                                    <td><img src="./img/lock.png" width="30" alt="과제사진"></td>
+                                    <td><input type="radio" name="protect" checked>공개
+                                   <input type="radio" name="protect">비공개</td>
+                                </tr>
+                                <tr>
+                                    <td>제목</td>
+                                    <td colspan="4"><input type="text" size="100"></td><tr>
+                                    <tr></tr><td>메시지</td>
+                                    <td colspan="4"><textarea cols="100" rows="20"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                                        <div id="tbl_submit">
+                                        <button type="submit">전송</button>
+                                    </div>
+                            </form>
+                     </div>
+
+                 </div>
+
+
+       </div>
+       <!--content끝-->
+       <!-- footer시작 -->
+       <div id="footer">
+           <div id="copyright">
+               <p>copyright & Copy <a href="./hw07-index.html" class="site">ansgusrnr154</a>All rights reserved.</p>
+               <span>EMAIL : ansgusrnr154@naver.com </span>
+           </div>   
+       </div>
+       <!-- footer끝 -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{margin: 0; padding: 0;}
+.wrapper{
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    font-size: 30px;
+    font-family:"나눔고딕";
+    height: 135px;
+    position: relative;
+    color: white;
+}
+ul {
+    list-style: none;
+    }
+a{
+    text-decoration: none;
+}
+#logo{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    height: 130px;
+}
+#menubar{
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+    background-color: lightgray;
+    color: white;
+    padding: 20px;
+    border: solid ;
+    text-align: center;
+    }
+#menubar li{
+    display: inline;
+    padding: 10px 30px 10px 0px;
+    margin: 0 auto;
+}
+#manubar li a{
+    color: white;
+    font-size: 20px;
+}
+#menubar li a:hover{
+color: crimson;
+font-size: 130%;
+text-decoration: underline;
+}

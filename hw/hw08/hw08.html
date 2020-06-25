@@ -1,0 +1,59 @@
+<!-- pr12-01_OnePageScroll-ans.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pr12-02_OnePageScroll-ans</title>
+<link rel="stylesheet" href="./css/menubar.css">
+<link rel="stylesheet" href="./css/onepagescroll-ans.css">
+
+
+    <!-- scrollto.js 플러그인 사용 -->
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/jquery.scrollTo.min.js"></script>
+<script>
+     $(function(){
+         $('nav a').click(function(e){
+             $.scrollTo(this.hash || 0, 1500);
+             e.preventDefault();
+         });
+     });
+</script>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>여행을 떠나요</h1>
+            <ul id="menubar">
+                <li><a href="../hw02/index.html">HW02</a></li>
+                <li><a href="../hw03/hw03.html">HW03</a></li>
+                <li><a href="../hw04/hw04.html">HW04</a></li>
+                <li><a href="../hw05/hw5.html">HW05</a></li>
+                <li><a href="../hw06/hw06.html">HW06</a></li>
+                <li><a href="../hw07/hw07.html">HW07</a></li>
+                <li><a href="../hw09/portfolio.html">기말최종과제</a></li>
+            </ul>
+            <nav>
+                <a href="#eu" class="nav-btn">유럽</a>
+                <a href="#us" class="nav-btn">미국</a>
+                <a href="#ch" class="nav-btn">중국</a>
+                <a href="#jp" class="nav-btn">일본</a>
+            </nav>
+        </header>
+    </div>
+    <div id="container">
+        <section id="eu" class="page1">
+            <h2>Europe</h2>
+        </section>
+        <section id="us" class="page2">
+            <h2>United States</h2>
+        </section>
+        <section id="ch" class="page3">
+            <h2>China</h2>
+        </section>
+        <section id="jp" class="page4">
+            <h2>Japan</h2>
+        </section>
+</div>  <!-- container -->
+</body>
+</html>

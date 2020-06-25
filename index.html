@@ -1,120 +1,90 @@
+<!-- hw5-index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW05중간고사대체과제</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Sunflower:wght@500&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; }
-        #wrapper {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: bisque;
-            background-image: url('./img/bg-01.gif');
+        @import url(../css/menubar.css);
+        body {
+            background-image:url(./img/bg1.jpg);
             background-size: cover;
         }
-        #button {
-            width: 160px;
-            color: white;
-            text-align: center;
-            /* height: 20px; */
-            padding: 0px 0px 10px 0px;
-            margin: 0px 0px 10px 0px;
-            border: 1px solid #ff8040;
-            background-color: #ff8040;
-            font-size: 36px;
-        }
-        #button p { 
-            font-size: 16px;
-            text-align: left;
-        }
-        #button a:hover {
-            text-decoration:none;
-            text-align: center;
-            color: white;
-        }
-        #content {
+        #content{
             text-align: center;
         }
-        #title {
-            font-family: "맑은 고딕", "돋움"; 
+        #title{
+            font-family:'Sunflower', sans-serif;
+            font-size: 4em;
             text-align: center;
-            padding: 20px;
-            margin-bottom: 50px;
-            color:brown;
-            background-color: burlywood;
-            font-size: 5em;
+            padding: 25px;
+            margin-bottom: 40px;
+}
+        img{
+            border-radius: 30%;
+            margin-bottom: 40px;
         }
-        #logo img{
-            border-radius: 50%;
+        #profile{
+            text-align: center;
+            font-size: 25px;
+            margin: 15px;
         }
-        #profile p {
-            font-size: 20px;
-            margin: 10px;
-        }
-        #profile_introduce {
-            font-size: 16px;
-            margin-top: 50px;
-            margin-bottom: 100px;
-            padding-bottom: 100px;
-        }
-        #main_menu li a {
-            display: inline;
-            list-style-type: none;
-            /* width: 155px; */
-            border-bottom: 1px solid lightgray;
-        }
-        #profile_list li {
-            list-style-type: none;
-            padding: 5px;
-        }
-        #main_menu li {
-            list-style-type: none;
-            display: inline;
-            padding-left: 20px;
-            font-size: 20px;
+          #profile_introduce{
+              margin-top: 10px;
+              margin-bottom: 150px;
+              padding-bottom: 50px;
+              font-size: 15px;
+          }
+          #profile_list{
+              list-style-type: none;
+              text-align: center;
+              padding: 20px;
+              }
+              
 
-        }
-        #main_menu li a:hover {
-            text-decoration: none;
-            background-color: white;
-        }
-        #profile {
-            border: 1px solid white;
-        }
     </style>
 </head>
 <body>
-<div id="wrapper">
+    <!-- 메뉴시작 -->
+    <div id="wrapper">
         <div id="button">
-            <a href="./quiz09.html">InSight</a>
-            <p>인터넷기초실습 1YA</p>
+        <a href="./index.html">MAIN</a>
+     <p>1YA문현국</p>
+    </div>
+    <div id="menubar">
+        <ul>
+            <li><a href="./hw/hw02/index.html">HW02</a></li>
+            <li><a href="./hw/hw03/hw03.html">HW03</a></li>
+            <li><a href="./hw/hw04/hw04.html">HW04</a></li>
+            <li><a href="./hw/hw05/hw5.html">HW05</a></li>
+            <li><a href="./hw/hw06/hw06.html">HW06</a></li>
+            <li><a href="./hw/hw07/hw07.html">HW07</a></li>
+            <li><a href="./hw/hw08/hw08.html">HW08</a></li>
+            <li><a href="./hw/hw09/portfolio.html">기말최종과제</a></li>
+        </ul>
+    </div>
+    <!-- 메뉴끝 -->
+    <!-- 내용시작 -->
+    <div id="content">
+        <h1 id="title">인터넷기초실습</h1>
+        <div id="profile">
+            <img src="./img/profil.jpg" alt="프로필">
+            <p>컴퓨터소프트웨어공학과</p>
+            <p>1학년 YA반 20200962 문현국</p>
         </div>
-        <div>
-            <ul id="main_menu">
-                <li><a href="../../hw/hw01/hw01.html">HW01</a></li>
-                <li><a href="../../hw/hw02/hw02.html">HW02</a></li>
-                <li><a href="../../hw/hw03/hw03.html">HW03</a></li>
-                <li><a href="../../hw/hw04/hw04.html">HW04</a></li>
+        <div id="profile_introduce">
+            <ul id="profile_list">
+                <li>1학년 신입생 고등학교 졸업후 회사생활과 군대전역을 빠르게 경험함</li>
+                <li>입이 무겁고 고등학교때부터 고민을 잘 들어줬음</li>
+                <li>#영화#책수집#게임</il>
             </ul>
         </div>
-        <div id="content">
-            <h1 id="title">Internet Basic Practice</h1>
-            <div id="logo">
-                <img src="./img/bg_character.jpg" alt="my_photo" width="250" title="캐릭터사진">
-            </div>
-            <div id="profile">
-                <p>컴퓨터소프트웨어공학과</p>
-                <p>1학년 YA반 20209999 홍길동</p>
-            </div>
-            <div id="profile_introduce">
-               <ul id="profile_list">
-                   <li>나에 대한 설명을 이렇게 저렇게 설명</li>
-                   <li>장점: 장점을 이것 저것 설명하는 중</li>
-                   <li>#클래식 #영화 #게임 #스포츠</li>
-               </ul>
-            </div>
-        </div>
-    <!--  본문 끝 -->
-</div>
+    <!-- 내용끝 -->
+
+    </div>
+    </div>
+    
 </body>
 </html>
